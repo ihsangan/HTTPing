@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
+<title>HTTPing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="flex-center">
+<select id="provider" size="6">
+  <option value="/ping">localdomain</option>
+  <option value="https://cloudflare.com/cdn-cgi/trace" selected>CloudFlare [anycast]</option>
+  <option value="https://time.fastly.net/">Fastly [anycast]</option>
+  <option value="https://global.gcping.com/api/ping">Google Cloud [anycast]</option>
+  <option value="https://asia-southeast2-5tkroniexa-et.a.run.app/ping">Google Cloud [Jakarta]</option>
+  <option value="https://storage.googleapis.com/awesome-gate-364607.appspot.com/ping">Google Cloud [London]</option>
+  <option value="https://storage.googleapis.com/brave-drummer-364822.appspot.com/ping">Google Cloud [Singapore]</option>
+  <option value="https://storage.googleapis.com/sanz-dc-a0.appspot.com/ping">Google Cloud [The Dalles]</option>
+  <option value="https://cdn.jsdelivr.net/gh/ihsangan/files/web-p/1">jsDelivr [anycast] [multi provider]</option>
+  <option value="https://dns.nextdns.io/info">NextDNS [anycast] [multi provider]</option>
+</select></div>
+<div class="flex-center position-ref full-height">
+<div id="ping" class="num">-</div><div class="ms">ms</div></div>
+<script src="script.js"></script>
+</body>
+</html>
