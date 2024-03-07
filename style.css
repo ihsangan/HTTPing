@@ -1,41 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
-html, body {
-background-color: #fff;
-color: #808080;
-font-family: 'Rubik', sans-serif;
-font-weight: 300;
-height: 100vh;
-margin: 0;
--webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
+
+body {
+  background-color: #F2F2F2;
+  color: #707070;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  height: 100vh;
+  margin: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
 .full-height {
-height: 100vh;
+  height: 100vh;
 }
+
 .flex-center {
-align-items: center;
-display: flex;
-justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
+
 .position-ref {
-position: relative;
+  position: relative;
 }
+
 .num {
-font-size: 37px;
-font-weight: 400;
-padding: 0 3px;
-text-align: center;
+  font-size: 37px;
+  font-weight: 400;
+  padding: 0 3px;
+  text-align: center;
 }
+
 .ms {
-font-size: 27px;
-padding: 0 0 16px;
-text-align: center;
+  font-size: 27px;
+  padding: 0 0 16px;
+  text-align: center;
 }
-.dm {
-background-color: #000;
-color: #808080;
+
+@media(prefers-color-scheme:dark) {
+  body {
+    background: #222;
+    color: #C9C9C9
+  }
 }
