@@ -1,12 +1,12 @@
 const srv = document.getElementById("provider");
-function pingDNS() {
+function ping() {
   const start = Date.now();
   fetch(`${srv.value}?${start}`, {
-      cache: "no-cache"
+      cache: "no-store"
     })
     .then(response => {
       const end = Date.now();
-      const timeTaken = end - start - 30;
+      const timeTaken = end - start - 20;
       const pingElement = document.getElementById('ping');
       pingElement.innerHTML = timeTaken;
     })
@@ -15,6 +15,6 @@ function pingDNS() {
     });
 }
 window.onload = function() {
-  pingDNS();
-  setInterval(pingDNS, 350);
+  ping();
+  setInterval(ping, 350);
 };
