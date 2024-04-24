@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=iJWKBXyIfDnIV4nDp3uS0Vfcgfs&skey=cee854e66788286d&v=v28) format('woff2');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=iJWKBXyIfDnIV4nDp3uS0VfVwbhP_fihZVMHZ74&skey=cee854e66788286d&v=v28) format('woff2');
+}
 body {
   background-color: #F2F2F2;
   color: #707070;
