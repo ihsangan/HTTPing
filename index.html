@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 </head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
 <title>HTTPing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
+<meta name="theme-color" content="#222">
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/ihsangan/ihsangan.github.io@ext/favicon.ico">
+<link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,6 +23,7 @@
     <div id="ping" class="num">-</div>
     <div class="ms">ms</div>
   </div>
-  <script src="script.js"></script>
+  <script async src="script.js"></script>
+  <script defer src="serviceworker.js"></script>
 </body>
 </html>
