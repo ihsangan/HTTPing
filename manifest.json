@@ -1,1 +1,58 @@
-{ "name": "HTTPing", "short_name": "HTTPing", "start_url": "/", "display": "standalone", "background_color": "#ffffff", "lang": "id", "scope": "/", "theme_color": "#707070", "prefer_related_applications": true, "icons": [{ "src": "https://cdn.jsdelivr.net/gh/ihsangan/ihsangan.github.io@ext/ic192.png", "sizes": "192x192", "type": "image/png" }, { "src": "https://cdn.jsdelivr.net/gh/ihsangan/ihsangan.github.io@ext/ic512.png", "sizes": "512x512", "type": "image/png" }] }
+{
+  "name": "HTTPing",
+  "short_name": "HTTPing",
+  "start_url": "/#cloudflare",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "lang": "en",
+  "scope": "/",
+  "theme_color": "#707070",
+  "icons": [
+    {
+      "src": "https://cdn.jsdelivr.net/gh/ihsangan/ihsangan.github.io@ext/ic192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/ihsangan/ihsangan.github.io@ext/ic512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "display_override": [
+    "fullscreen",
+    "standalone",
+    "window-controls-overlay"
+  ],
+  "categories": [
+    "utilities"
+  ],
+  "shortcuts": [
+    {
+      "name": "Cloudflare",
+      "url": "/#cloudflare",
+      "description": "Ping to cloudflare.com"
+    },
+    {
+      "name": "Fastly",
+      "url": "/#fastly",
+      "description": "Ping to time.fastly.net"
+    },
+    {
+      "name": "Google",
+      "url": "/#google",
+      "description": "Ping to gcping.com"
+    },
+    {
+      "name": "jsDelivr",
+      "url": "/#jsdelivr",
+      "description": "Ping to cdn.jsdelivr.net"
+    },
+    {
+      "name": "NextDNS",
+      "url": "/#nextdns",
+      "description": "Ping to dns.nextdns.io"
+    }
+  ],
+  "orientation": "any"
+}
