@@ -1,9 +1,4 @@
-const srv = document.getElementById('provider');
-const hash = window.location.hash;
-srv.addEventListener('change', function() {
-  var sld = this.options[this.selectedIndex].id;
-  window.location.hash = sld;
-});
+let srv = document.getElementById('provider');
 function ping() {
   const start = Date.now();
   fetch(`${srv.value}?${start}`, {
@@ -20,13 +15,17 @@ function ping() {
     });
 }
 window.onload = function() {
-  if (!hash) {
-    hash = 'cloudflare';
+  if (!window.location.hash) {
+    window.location.hash = 'cloudflare';
   }
-  let slc = document.getElementById(hash.substring(1));
+  let slc = document.getElementById(window.location.hash.substring(1));
   if (slc) {
     slc.selected = true;
   }
   ping();
   setInterval(ping, 350);
+  srv.addEventListener('change', function() {
+    var sld = this.options[this.selectedIndex].id;
+    window.location.hash = sld;
+  });
 };

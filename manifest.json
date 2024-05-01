@@ -5,7 +5,6 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "lang": "en",
-  "scope": "/",
   "theme_color": "#707070",
   "icons": [
     {
@@ -19,40 +18,70 @@
       "type": "image/png"
     }
   ],
-  "display_override": [
-    "fullscreen",
-    "standalone",
-    "window-controls-overlay"
-  ],
   "categories": [
     "utilities"
   ],
   "shortcuts": [
     {
+      "name": "bunny.net",
+      "url": "/#bunny",
+      "description": "Ping to jsdelivr.b-cdn.net",
+      "icons": [
+        {
+          "src": "https://cdn.jsdelivr.net/gh/ihsangan/files/bunny.png", "sizes": "192x192"
+        }
+      ]
+    },
+    {
       "name": "Cloudflare",
       "url": "/#cloudflare",
-      "description": "Ping to cloudflare.com"
+      "description": "Ping to cloudflare.com",
+      "icons": [
+        {
+          "src": "https://cdn.jsdelivr.net/gh/ihsangan/files/cloudflare.png", "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "Fastly",
       "url": "/#fastly",
-      "description": "Ping to time.fastly.net"
+      "description": "Ping to time.fastly.net",
+      "icons": [
+        {
+          "src": "https://cdn.jsdelivr.net/gh/ihsangan/files/fastly.png", "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "Google",
       "url": "/#google",
-      "description": "Ping to gcping.com"
+      "description": "Ping to gcping.com",
+      "icons": [
+        {
+          "src": "https://cdn.jsdelivr.net/gh/ihsangan/files/google.png", "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "jsDelivr",
       "url": "/#jsdelivr",
-      "description": "Ping to cdn.jsdelivr.net"
+      "description": "Ping to cdn.jsdelivr.net",
+      "icons": [
+        {
+          "src": "https://cdn.jsdelivr.net/gh/ihsangan/files/jsdelivr.png", "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "NextDNS",
       "url": "/#nextdns",
-      "description": "Ping to dns.nextdns.io"
+      "description": "Ping to dns.nextdns.io",
+      "icons": [
+        {
+          "src": "https://cdn.jsdelivr.net/gh/ihsangan/files/nextdns.png", "sizes": "192x192"
+        }
+      ]
     }
   ],
-  "orientation": "any"
+  "orientation": "portrait-primiary"
 }
