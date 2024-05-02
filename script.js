@@ -1,12 +1,14 @@
 let srv = document.getElementById('provider');
+let params = new URLSearchParams(document.location.search);
+const mean = params.get('m') || 100;
+const intv = params.get('i') || 350;
 function ping() {
-  const start = Date.now();
+  let start = Date.now();
   fetch(`${srv.value}?${start}`, {
       cache: "no-store"
     })
     .then(response => {
-      const end = Date.now();
-      const timeTaken = end - start - 20;
+      const timeTaken = Date.now() - start - mean;
       const pingElement = document.getElementById('ping');
       pingElement.innerHTML = timeTaken;
     })
@@ -23,7 +25,7 @@ window.onload = function() {
     slc.selected = true;
   }
   ping();
-  setInterval(ping, 350);
+  setInterval(ping, intv);
   srv.addEventListener('change', function() {
     var sld = this.options[this.selectedIndex].id;
     window.location.hash = sld;
