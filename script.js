@@ -1,6 +1,6 @@
 let srv = document.getElementById('provider');
 let params = new URLSearchParams(document.location.search);
-const mean = params.get('m') || 100;
+const mean = params.get('m') || 20;
 const intv = params.get('i') || 350;
 function ping() {
   let start = Date.now();
